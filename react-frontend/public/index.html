@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Hệ thống Quản lý Vật tư Tiêu hao Y tế" />
+  
+  <title>Hospital Material Management</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .sidebar {
+      position: fixed;
+      top: 56px;
+      left: 0;
+      bottom: 0;
+      width: 250px;
+      background-color: #f8f9fa;
+      border-right: 1px solid #dee2e6;
+      overflow-y: auto;
+    }
+    
+    .main-content {
+      margin-left: 250px;
+      padding: 20px;
+      margin-top: 56px;
+    }
+    
+    .nav-link {
+      color: #495057;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-link:hover {
+      background-color: #e9ecef;
+      color: #0d6efd;
+    }
+    
+    .nav-link.active {
+      background-color: #0d6efd;
+      color: white;
+    }
+    
+    .nav-link i {
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+    
+    .status-badge {
+      font-size: 0.875rem;
+      padding: 0.25rem 0.5rem;
+    }
+    
+    .card {
+      box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+      margin-bottom: 1.5rem;
+    }
+    
+    .table-responsive {
+      border-radius: 0.25rem;
+    }
+    
+    .btn-icon {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+    }
+
+    .paper {
+      max-width: 920px;
+      margin: 0 auto 1.5rem;
+      padding: 40px 48px;
+      background: #fff;
+      color: #000;
+      border: 1px solid #ced4da;
+      box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.1);
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1rem;
+    }
+
+    .paper-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .paper-center {
+      text-align: center;
+    }
+
+    .paper-title {
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .paper-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+
+    .paper-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+
+    .paper-table th,
+    .paper-table td {
+      border: 1px solid #000;
+      padding: 6px 8px;
+      vertical-align: middle;
+    }
+
+    .paper-table th {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .paper-table td.center {
+      text-align: center;
+    }
+
+    .paper-table td.right {
+      text-align: right;
+    }
+
+    .paper-table tr.empty-row td {
+      height: 38px;
+    }
+
+    .paper-sign {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    .paper-sign .sign-title {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .paper-sign .sign-note {
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+
+    .paper-sign .sign-space {
+      height: 80px;
+    }
+
+    .paper-sign .sign-name {
+      font-weight: bold;
+    }
+
+    @media print {
+      .navbar, .sidebar {
+        display: none !important;
+      }
+      .main-content {
+        margin: 0;
+        padding: 0;
+      }
+      .paper {
+        max-width: none;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <noscript>Bạn cần bật JavaScript để chạy ứng dụng này.</noscript>
+  <div id="root"></div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
